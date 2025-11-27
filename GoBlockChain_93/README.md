@@ -1,4 +1,4 @@
-\# GoBlockChain\_08
+\# GoBlockChain\_93
 
 
 
@@ -40,9 +40,9 @@
 
 \# 克隆项目
 
-git clone https://github.com/yourname/GoBlockChain\_08.git
+git clone https://github.com/yourname/GoBlockChain\_93.git
 
-cd GoBlockChain\_08
+cd GoBlockChain\_93
 
 
 
@@ -92,5 +92,6 @@ go run BlockChain.go
 
 
 采用MIT协议，欢迎提交 Issue 和 Pull Request！
+
 
 
