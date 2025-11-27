@@ -369,6 +369,12 @@ func (bc *Blockchain) CreateAccount(label string, initialBalance int) *Account {
 
 func (bc *Blockchain) AddTransaction(fromAcc *Account, to string, amount int) {
 	// 验证接收方
+	const MaxTxPool = 10
+if len(bc.TxPool) >= MaxTxPool {
+    fmt.Println("交易池已满，拒绝新交易")
+    return
+}
+	
 	if _, exists := bc.Accounts[to]; !exists {
 		fmt.Printf("接收方账户不存在: %s\n", to)
 		return
